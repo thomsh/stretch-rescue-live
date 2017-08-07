@@ -1,0 +1,30 @@
+#!/bin/bash
+
+set -eu
+
+# Disable services.
+
+services=(
+	atm
+	avahi-daemon
+	clamav-freshclam
+	cron
+	curvedns
+	inetd
+	lldpd
+	ModemManager
+	mpt-statusd
+	NetworkManager
+	rpcbind
+	rsyslog
+	smartd
+	ssh
+	zfs-mount
+	zfs-share
+	zfs-zed
+)
+
+for s in "${services[@]}"; do
+	systemctl disable "${s}.service" || true
+done
+

@@ -1,0 +1,25 @@
+#!/bin/sh
+
+set -e
+
+_mirror="http://mirror.it.ubc.ca/debian"
+
+lb config noauto \
+	--clean \
+	--mode debian \
+	--distribution stretch \
+	--architectures amd64 \
+	--binary-images iso-hybrid \
+	--debian-installer false \
+	--memtest memtest86+ \
+	--linux-flavours "amd64" \
+	--linux-packages "linux-image linux-headers" \
+	--mirror-bootstrap "${_mirror}" \
+	--mirror-binary "http://deb.debian.org/debian" \
+	--archive-areas "main contrib non-free" \
+	--apt-source-archives false \
+	--security true \
+	--source false \
+	--firmware-chroot true \
+	"${@}"
+
