@@ -1,4 +1,7 @@
 acl
+acpi
+acpi-support
+arptables
 at
 attr
 aufs-tools
@@ -10,7 +13,10 @@ clonezilla
 console-setup
 curlftpfs
 diskscan
+dnsutils
+ebtables
 ecryptfs-utils
+ethtool
 extlinux
 f2fs-tools
 fatresize
