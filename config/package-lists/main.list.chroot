@@ -11,6 +11,7 @@ btrfs-progs
 cifs-utils
 clonezilla
 console-setup
+cryptsetup
 curlftpfs
 diskscan
 dnsutils
@@ -41,6 +42,7 @@ kpartx
 lilo
 lvm2
 mbr
+mc
 mdadm
 ncdu
 needrestart
@@ -48,6 +50,8 @@ net-tools
 network-manager
 nfs-common
 nwipe
+p7zip-full
+p7zip-rar
 parted
 psmisc
 pv
@@ -57,11 +61,13 @@ reiser4progs
 reiserfsprogs
 screen
 smbclient
+squashfs-tools
 sshfs
 sysfsutils
 syslinux
 tcplay
 testdisk
+tmux
 udftools
 udisks2
 vlan
@@ -70,3 +76,4 @@ xfsdump
 xfsprogs
 xorriso
 zerofree
+zip
