@@ -282,7 +282,7 @@ libhogweed4:amd64	3.3-1+b1
 libice6:amd64	2:1.0.9-2
 libicu57:amd64	57.1-6
 libidn11:amd64	1.33-1
-libidn2-0:amd64	0.16-1
+libidn2-0:amd64	0.16-1+deb9u1
 libintl-perl	1.26-2
 libintl-xs-perl	1.26-2+b1
 libip4tc0:amd64	1.6.0+snapshot20161117-6
