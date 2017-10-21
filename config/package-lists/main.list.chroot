@@ -39,7 +39,9 @@ isolinux
 jfsutils
 info
 kpartx
+laptop-detect
 lilo
+lshw
 lvm2
 mbr
 mc
