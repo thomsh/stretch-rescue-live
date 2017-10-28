@@ -41,6 +41,7 @@ info
 kpartx
 laptop-detect
 lilo
+lldpd
 lshw
 lvm2
 mbr
