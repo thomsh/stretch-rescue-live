@@ -34,10 +34,13 @@ hfsplus
 hfsprogs
 hfsutils
 ifenslave
+iftop
+info
 inxi
+iperf
+iperf3
 isolinux
 jfsutils
-info
 kpartx
 laptop-detect
 lilo
