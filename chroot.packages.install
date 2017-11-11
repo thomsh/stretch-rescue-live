@@ -621,6 +621,7 @@ sed	4.4-1
 sensible-utils	0.0.9
 sgml-base	1.29
 shared-mime-info	1.8-1
+smartmontools	6.5+svn4324-1
 smbclient	2:4.5.12+dfsg-2
 squashfs-tools	1:4.3-3+deb9u1
 sshfs	2.8-1

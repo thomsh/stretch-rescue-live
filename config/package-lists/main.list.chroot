@@ -68,6 +68,7 @@ pxelinux
 reiser4progs
 reiserfsprogs
 screen
+smartmontools
 smbclient
 squashfs-tools
 sshfs
