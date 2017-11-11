@@ -15,6 +15,7 @@ services=(
 	ModemManager
 	mpt-statusd
 	NetworkManager
+	NetworkManager-wait-online
 	rpcbind
 	rsyslog
 	smartd

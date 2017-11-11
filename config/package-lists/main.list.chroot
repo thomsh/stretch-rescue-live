@@ -39,6 +39,7 @@ info
 inxi
 iperf
 iperf3
+iptables-nftables-compat
 isolinux
 jfsutils
 kpartx
@@ -55,6 +56,7 @@ needrestart
 net-tools
 network-manager
 nfs-common
+nftables
 nwipe
 p7zip-full
 p7zip-rar
