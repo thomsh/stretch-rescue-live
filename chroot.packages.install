@@ -78,12 +78,14 @@ ebtables	2.0.10.4-3.5+b1
 ecryptfs-utils	111-4
 efibootmgr	14-2
 eject	2.1.5+deb1+cvs20081104-13.2
+etherwake	1.09-4+b1
 ethtool	1:4.8-1+b1
 exfat-fuse	1.2.5-2
 exfat-utils	1.2.5-2
-exim4-base	4.89-2+deb9u1
-exim4-config	4.89-2+deb9u1
-exim4-daemon-light	4.89-2+deb9u1
+exim4	4.89-2+deb9u2
+exim4-base	4.89-2+deb9u2
+exim4-config	4.89-2+deb9u2
+exim4-daemon-light	4.89-2+deb9u2
 extlinux	3:6.03+dfsg-14.1
 f2fs-tools	1.7.0-1.1
 fakeroot	1.21-3.1
@@ -210,6 +212,8 @@ libavahi-client3:amd64	0.6.32-2
 libavahi-common-data:amd64	0.6.32-2
 libavahi-common3:amd64	0.6.32-2
 libbind9-140:amd64	1:9.10.3.dfsg.P4-12.3+deb9u3
+libblas-common	3.7.0-2
+libblas3	3.7.0-2
 libblkid1:amd64	2.29.2-1
 libbluetooth3:amd64	5.43-2+deb9u1
 libboost-filesystem1.62.0:amd64	1.62.0+dfsg-4
@@ -235,7 +239,7 @@ libclass-isa-perl	0.36-5
 libcomerr2:amd64	1.43.4-2
 libcryptsetup4:amd64	2:1.7.3-4
 libcups2:amd64	2.2.1-8
-libcurl3-gnutls:amd64	7.52.1-5+deb9u2
+libcurl3-gnutls:amd64	7.52.1-5+deb9u3
 libcwidget3v5:amd64	0.5.17-4+b1
 libdb5.3:amd64	5.3.28-12+deb9u1
 libdbus-1-3:amd64	1.10.22-0+deb9u1
@@ -277,6 +281,7 @@ libgcc1:amd64	1:6.3.0-18
 libgcrypt20:amd64	1.7.6-2+deb9u2
 libgdbm3:amd64	1.8.3-14
 libgeoip1:amd64	1.6.9-4
+libgfortran3:amd64	6.3.0-18
 libgl1-mesa-dri:amd64	13.0.6-1+b2
 libgl1-mesa-glx:amd64	13.0.6-1+b2
 libglapi-mesa:amd64	13.0.6-1+b2
@@ -337,6 +342,7 @@ libkyotocabinet16v5:amd64	1.2.76-4.2+b1
 libldap-2.4-2:amd64	2.4.44+dfsg-5+deb9u1
 libldap-common	2.4.44+dfsg-5+deb9u1
 libldb1:amd64	2:1.1.27-1+b1
+liblinear3:amd64	2.1.0+dfsg-2
 libllvm3.9:amd64	1:3.9.1-9
 liblocale-gettext-perl	1.07-3+b1
 liblockfile-bin	1.14-1+b1
@@ -344,6 +350,7 @@ liblogging-stdlog0:amd64	1.0.5-2+b2
 liblognorm5:amd64	2.0.1-1.1+b1
 liblsan0:amd64	6.3.0-18
 libltdl7:amd64	2.4.6-2
+liblua5.3-0:amd64	5.3.3-1
 liblvm2app2.2:amd64	2.02.168-2
 liblvm2cmd2.02:amd64	2.02.168-2
 liblwp-mediatypes-perl	6.02-1
@@ -509,6 +516,7 @@ libxpm4:amd64	1:3.5.12-1
 libxrandr2:amd64	2:1.5.1-1
 libxrender1:amd64	1:0.9.10-1
 libxshmfence1:amd64	1.2-1+b2
+libxslt1.1:amd64	1.1.29-2.1
 libxt6:amd64	1:1.1.5-1
 libxtables12:amd64	1.6.0+snapshot20161117-6
 libxtst6:amd64	2:1.2.3-1
@@ -565,6 +573,7 @@ ncdu	1.12-1+b1
 ncurses-base	6.0+20161126-1+deb9u1
 ncurses-bin	6.0+20161126-1+deb9u1
 ncurses-term	6.0+20161126-1+deb9u1
+ndiff	7.40-1
 needrestart	2.11-3
 net-tools	1.60+git20161116.90da8a0-1
 netbase	5.4
@@ -573,6 +582,7 @@ network-manager	1.6.2-3
 nfs-common	1:1.3.4-2.1
 nftables	0.7-1
 nilfs-tools	2.2.6-1+b1
+nmap	7.40-1
 ntfs-3g	1:2016.2.22AR.1+dfsg-1
 nwipe	0.21-1
 openssh-client	1:7.4p1-10+deb9u1
@@ -604,12 +614,19 @@ pwgen	2.07-1.1+b1
 pxelinux	3:6.03+dfsg-14.1
 python	2.7.13-2
 python-apt-common	1.4.0~beta3
+python-bs4	4.5.3-1
+python-chardet	2.3.0-2
 python-crypto	2.6.1-7
+python-html5lib	0.999999999-1
 python-ldb	2:1.1.27-1+b1
+python-lxml	3.7.1-1
 python-minimal	2.7.13-2
+python-pkg-resources	33.1.1-1
 python-samba	2:4.5.12+dfsg-2+deb9u1
+python-six	1.10.0-3
 python-talloc	2.1.8-1
 python-tdb	1.3.11-2
+python-webencodings	0.5-2
 python2.7	2.7.13-2
 python2.7-minimal	2.7.13-2
 python3	3.5.3-1
@@ -647,6 +664,7 @@ sgml-base	1.29
 shared-mime-info	1.8-1
 smartmontools	6.5+svn4324-1
 smbclient	2:4.5.12+dfsg-2+deb9u1
+socat	1.7.3.1-2+deb9u1
 squashfs-tools	1:4.3-3+deb9u1
 sshfs	2.8-1
 sudo	1.8.19p1-2.1

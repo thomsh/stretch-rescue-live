@@ -18,6 +18,7 @@ diskscan
 dnsutils
 ebtables
 ecryptfs-utils
+etherwake
 ethtool
 extlinux
 f2fs-tools
@@ -58,6 +59,7 @@ net-tools
 network-manager
 nfs-common
 nftables
+nmap
 nwipe
 p7zip-full
 p7zip-rar
@@ -71,6 +73,7 @@ reiserfsprogs
 screen
 smartmontools
 smbclient
+socat
 squashfs-tools
 sshfs
 sysfsutils
