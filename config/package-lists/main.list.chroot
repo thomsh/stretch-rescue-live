@@ -35,6 +35,7 @@ grub-xen-bin
 hfsplus
 hfsprogs
 hfsutils
+hwinfo
 ifenslave
 iftop
 info
