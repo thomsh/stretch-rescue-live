@@ -1,0 +1,6 @@
+# Should mdadm run monthly redundancy checks of the MD arrays?
+mdadm	mdadm/autocheck	boolean	false
+# Recipient for email notifications:
+mdadm	mdadm/mail_to	string	root
+# Do you want to start the MD monitoring daemon?
+mdadm	mdadm/start_daemon	boolean	false

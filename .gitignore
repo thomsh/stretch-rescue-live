@@ -19,7 +19,6 @@ config/hooks/normal/0110-remove-backup-files.hook.chroot
 config/hooks/normal/0120-remove-dbus-machine-id.hook.chroot
 config/hooks/normal/0130-remove-gnome-icon-cache.hook.chroot
 config/hooks/normal/0140-remove-log-files.hook.chroot
-config/hooks/normal/0150-remove-mdadm-configuration.hook.chroot
 config/hooks/normal/0160-remove-openssh-server-host-keys.hook.chroot
 config/hooks/normal/0170-remove-python-py.hook.chroot
 config/hooks/normal/0180-remove-systemd-machine-id.hook.chroot

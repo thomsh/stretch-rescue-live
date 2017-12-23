@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -eu
+
+# Override live-build's handling of mdadm, as follows:
+#
+# Don't remove /etc/mdadm/mdadm.conf entirely;
+# instead, remove only the ARRAY declarations from the file.
+
+if [ -f /etc/mdadm/mdadm.conf ]; then
+
+	sed -i -e '/^ARRAY/d' /etc/mdadm/mdadm.conf
+
+else
+
+	echo "/etc/mdadm/mdadm.conf does not exist."
+fi
+
+exit 0
+
