@@ -25,6 +25,8 @@ bash-completion	1:2.1-4.3
 bc	1.06.95-9+b3
 bind9-host	1:9.10.3.dfsg.P4-12.3+deb9u4
 binutils	2.28-5
+bluetooth	5.43-2+deb9u1
+bluez	5.43-2+deb9u1
 bluez-firmware	1.2-3
 bridge-utils	1.5-13+deb9u1
 broadcom-sta-dkms	6.30.223.271-5

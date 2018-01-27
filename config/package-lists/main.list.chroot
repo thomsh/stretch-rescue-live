@@ -6,6 +6,7 @@ arptables
 at
 attr
 aufs-tools
+bluetooth
 bridge-utils
 broadcom-sta-dkms
 btrfs-progs
