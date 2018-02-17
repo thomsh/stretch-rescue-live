@@ -28,6 +28,7 @@ binutils	2.28-5
 bluetooth	5.43-2+deb9u1
 bluez	5.43-2+deb9u1
 bluez-firmware	1.2-3
+bonnie++	1.97.3
 bridge-utils	1.5-13+deb9u1
 broadcom-sta-dkms	6.30.223.271-5
 bsdmainutils	9.0.12+nmu1
@@ -84,9 +85,10 @@ etherwake	1.09-4+b1
 ethtool	1:4.8-1+b1
 exfat-fuse	1.2.5-2
 exfat-utils	1.2.5-2
-exim4-base	4.89-2+deb9u2
-exim4-config	4.89-2+deb9u2
-exim4-daemon-light	4.89-2+deb9u2
+exim4	4.89-2+deb9u3
+exim4-base	4.89-2+deb9u3
+exim4-config	4.89-2+deb9u3
+exim4-daemon-light	4.89-2+deb9u3
 extlinux	3:6.03+dfsg-14.1+deb9u1
 f2fs-tools	1.7.0-1.1
 fakeroot	1.21-3.1
@@ -200,6 +202,7 @@ krb5-locales	1.15-1+deb9u1
 laptop-detect	0.13.8
 less	481-2.1
 libacl1:amd64	2.2.52-3+b1
+libaio1:amd64	0.3.110-3
 libapparmor1:amd64	2.11.0-3
 libapt-inst2.0:amd64	1.4.8
 libapt-pkg5.0:amd64	1.4.8
@@ -438,6 +441,7 @@ librtmp1:amd64	2.4+20151223.gitfa8646d.1-1+b1
 libsasl2-2:amd64	2.1.27~101-g0780600+dfsg-3
 libsasl2-modules:amd64	2.1.27~101-g0780600+dfsg-3
 libsasl2-modules-db:amd64	2.1.27~101-g0780600+dfsg-3
+libsctp1:amd64	1.0.17+dfsg-1+b1
 libseccomp2:amd64	2.3.1-2.1
 libselinux1:amd64	2.6-3+b3
 libsemanage-common	2.6-2
@@ -671,6 +675,8 @@ smbclient	2:4.5.12+dfsg-2+deb9u1
 socat	1.7.3.1-2+deb9u1
 squashfs-tools	1:4.3-3+deb9u1
 sshfs	2.8-1
+stress	1.0.4-2
+stress-ng	0.07.16-1
 sudo	1.8.19p1-2.1
 sysfsutils	2.1.0+repack-4+b2
 syslinux	3:6.03+dfsg-14.1+deb9u1
@@ -682,12 +688,13 @@ tar	1.29b-1.1
 tasksel	3.39
 tasksel-data	3.39
 tcpd	7.6.q-26
+tcpdump	4.9.2-1~deb9u1
 tcplay	1.1-3
 telnet	0.17-41
 testdisk	7.0-3
 tmux	2.3-4
 traceroute	1:2.1.0-2
-tzdata	2017c-0+deb9u1
+tzdata	2018c-0+deb9u1
 ucf	3.0036
 udev	232-25+deb9u1
 udftools	1.3-2~deb9u1

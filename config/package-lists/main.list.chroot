@@ -7,6 +7,7 @@ at
 attr
 aufs-tools
 bluetooth
+bonnie++
 bridge-utils
 broadcom-sta-dkms
 btrfs-progs
@@ -78,8 +79,11 @@ smbclient
 socat
 squashfs-tools
 sshfs
+stress
+stress-ng
 sysfsutils
 syslinux
+tcpdump
 tcplay
 testdisk
 tmux
