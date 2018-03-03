@@ -3,11 +3,12 @@
 set -e
 
 _mirror="http://mirror.it.ubc.ca/debian"
+_dist="stretch"
 
 lb config noauto \
 	--clean \
 	--mode debian \
-	--distribution stretch \
+	--distribution "${_dist}" \
 	--architectures amd64 \
 	--binary-images iso-hybrid \
 	--debian-installer false \
@@ -21,7 +22,7 @@ lb config noauto \
 	--security true \
 	--source false \
 	--firmware-chroot true \
-	--bootappend-live 'boot=live components toram=filesystem.squashfs \"\$\{loopback\}\" \"\$\{kernelopts\}\"' \
-	--bootappend-live-failsafe 'boot=live components \"\$\{loopback\}\" \"\$\{kernelopts\}\"' \
+	--bootappend-live 'boot=live components'" hostname=${_dist} "'toram=filesystem.squashfs \"\$\{loopback\}\" \"\$\{kernelopts\}\"' \
+	--bootappend-live-failsafe 'boot=live components'" hostname=${_dist} "'\"\$\{loopback\}\" \"\$\{kernelopts\}\"' \
 	"${@}"
 
