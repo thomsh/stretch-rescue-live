@@ -34,6 +34,7 @@ grub-efi-amd64-bin
 grub-efi-ia32-bin
 grub-pc-bin
 grub-xen-bin
+haveged
 hfsplus
 hfsprogs
 hfsutils
@@ -45,6 +46,7 @@ inxi
 iperf
 iperf3
 iptables-nftables-compat
+iptraf-ng
 isolinux
 jfsutils
 kpartx
@@ -56,14 +58,17 @@ lvm2
 mbr
 mc
 mdadm
+mtr-tiny
 ncdu
 needrestart
+neofetch
 net-tools
 network-manager
 nfs-common
 nftables
 nmap
 nwipe
+openssh-server
 p7zip-full
 p7zip-rar
 parted
@@ -79,7 +84,6 @@ smbclient
 socat
 squashfs-tools
 sshfs
-stress
 stress-ng
 sysfsutils
 syslinux
@@ -87,6 +91,8 @@ tcpdump
 tcplay
 testdisk
 tmux
+tree
+u-boot-tools
 udftools
 udisks2
 vlan
