@@ -165,6 +165,7 @@ hfsprogs	332.25-11+b2
 hfsutils	3.2.6-13+b1
 host	1:9.10.3.dfsg.P4-12.3+deb9u4
 hostname	3.18+b1
+htop	2.0.2-1
 hwinfo	21.38-1
 ifenslave	2.9
 iftop	1.0~pre4-4
