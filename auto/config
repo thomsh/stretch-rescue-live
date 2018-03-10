@@ -22,7 +22,7 @@ lb config noauto \
 	--security true \
 	--source false \
 	--firmware-chroot true \
-	--bootappend-live 'boot=live components'" hostname=${_dist} "'toram=filesystem.squashfs \"\$\{loopback\}\" \"\$\{kernelopts\}\"' \
-	--bootappend-live-failsafe 'boot=live components'" hostname=${_dist} "'\"\$\{loopback\}\" \"\$\{kernelopts\}\"' \
+	--bootappend-live 'boot=live components'" hostname=${_dist}-live "'toram=filesystem.squashfs \"\$\{loopback\}\" \"\$\{kernelopts\}\"' \
+	--bootappend-live-failsafe 'boot=live components'" hostname=${_dist}-live "'\"\$\{loopback\}\" \"\$\{kernelopts\}\"' \
 	"${@}"
 
