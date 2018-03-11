@@ -32,7 +32,7 @@ bonnie++	1.97.3
 bridge-utils	1.5-13+deb9u1
 broadcom-sta-dkms	6.30.223.271-5
 bsdmainutils	9.0.12+nmu1
-bsdutils	1:2.29.2-1
+bsdutils	1:2.29.2-1+deb9u1
 btrfs-progs	4.7.3-1
 busybox	1:1.22.0-19+b3
 bzip2	1.0.6-8.1
@@ -222,7 +222,7 @@ libavahi-common3:amd64	0.6.32-2
 libbind9-140:amd64	1:9.10.3.dfsg.P4-12.3+deb9u4
 libblas-common	3.7.0-2
 libblas3	3.7.0-2
-libblkid1:amd64	2.29.2-1
+libblkid1:amd64	2.29.2-1+deb9u1
 libbluetooth3:amd64	5.43-2+deb9u1
 libboost-filesystem1.62.0:amd64	1.62.0+dfsg-4
 libboost-iostreams1.62.0:amd64	1.62.0+dfsg-4
@@ -275,7 +275,7 @@ libf2fs0:amd64	1.7.0-1.1
 libfakeroot:amd64	1.21-3.1
 libfastjson4:amd64	0.99.4-1
 libfcgi-perl	0.78-2
-libfdisk1:amd64	2.29.2-1
+libfdisk1:amd64	2.29.2-1+deb9u1
 libffi6:amd64	3.2.1-6
 libfontconfig1:amd64	2.11.0-6.7+b1
 libfontenc1:amd64	1:1.1.3-1+b2
@@ -378,7 +378,7 @@ libmm-glib0:amd64	1.6.4-1
 libmnl0:amd64	1.0.4-2
 libmodule-find-perl	0.13-1
 libmodule-scandeps-perl	1.23-1
-libmount1:amd64	2.29.2-1
+libmount1:amd64	2.29.2-1+deb9u1
 libmpc3:amd64	1.0.3-1+b2
 libmpdec2:amd64	2.4.2-1
 libmpfr4:amd64	3.1.5-1
@@ -455,7 +455,7 @@ libsigc++-2.0-0v5:amd64	2.10.0-1
 libsigsegv2:amd64	2.10-5
 libslang2:amd64	2.3.1-5
 libsm6:amd64	2:1.2.2-1+b3
-libsmartcols1:amd64	2.29.2-1
+libsmartcols1:amd64	2.29.2-1+deb9u1
 libsmbclient:amd64	2:4.5.12+dfsg-2+deb9u1
 libsnmp-base	5.7.3+dfsg-1.7
 libsnmp30:amd64	5.7.3+dfsg-1.7
@@ -494,7 +494,7 @@ liburi-perl	1.71-1
 libusb-1.0-0:amd64	2:1.0.21-1
 libustr-1.0-1:amd64	1.0.4-6
 libutempter0:amd64	1.1.6-3
-libuuid1:amd64	2.29.2-1
+libuuid1:amd64	2.29.2-1+deb9u1
 libwbclient0:amd64	2:4.5.12+dfsg-2+deb9u1
 libwrap0:amd64	7.6.q-26
 libx11-6:amd64	2:1.6.4-3
@@ -536,6 +536,7 @@ libxv1:amd64	2:1.0.11-1
 libxxf86dga1:amd64	2:1.1.4-1+b3
 libxxf86vm1:amd64	1:1.1.4-1+b2
 lilo	1:24.2-2+b1
+links	2.14-2+b1
 linux-base	4.5
 linux-compiler-gcc-6-x86	4.9.82-1+deb9u3
 linux-headers-4.9.0-6-amd64	4.9.82-1+deb9u3
@@ -576,7 +577,7 @@ mdadm	3.4-4+b1
 mesa-utils	8.3.0-3
 mime-support	3.60
 modemmanager	1.6.4-1
-mount	2.29.2-1
+mount	2.29.2-1+deb9u1
 mtools	4.0.18-2+b1
 mtr-tiny	0.87-1
 multiarch-support	2.24-11+deb9u3
@@ -712,8 +713,8 @@ usb-modeswitch	2.5.0+repack0-1
 usb-modeswitch-data	20170120-1
 usbutils	1:007-4+b1
 user-setup	1.67
-util-linux	2.29.2-1
-uuid-runtime	2.29.2-1
+util-linux	2.29.2-1+deb9u1
+uuid-runtime	2.29.2-1+deb9u1
 vbetool	1.1-4
 vim-common	2:8.0.0197-4+deb9u1
 vim-tiny	2:8.0.0197-4+deb9u1
