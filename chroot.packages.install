@@ -315,7 +315,7 @@ libhtml-tagset-perl	3.20-3
 libhttp-date-perl	6.02-1
 libhttp-message-perl	6.11-1
 libice6:amd64	2:1.0.9-2
-libicu57:amd64	57.1-6+deb9u1
+libicu57:amd64	57.1-6+deb9u2
 libidn11:amd64	1.33-1
 libidn2-0:amd64	0.16-1+deb9u1
 libintl-perl	1.26-2
