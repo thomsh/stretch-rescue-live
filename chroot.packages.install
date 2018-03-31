@@ -407,7 +407,7 @@ libpam-cap:amd64	1:2.25-1
 libpam-modules:amd64	1.1.8-3.6
 libpam-modules-bin	1.1.8-3.6
 libpam-runtime	1.1.8-3.6
-libpam-systemd:amd64	232-25+deb9u2
+libpam-systemd:amd64	232-25+deb9u3
 libpam0g:amd64	1.1.8-3.6
 libparse-debianchangelog-perl	1.2.0-12
 libparted-fs-resize0:amd64	3.2-17
@@ -464,13 +464,13 @@ libsoup2.4-1:amd64	2.56.0-2+deb9u1
 libsqlite3-0:amd64	3.16.2-5+deb9u1
 libss2:amd64	1.43.4-2
 libssh2-1:amd64	1.7.0-1
-libssl1.0.2:amd64	1.0.2l-2+deb9u2
-libssl1.1:amd64	1.1.0f-3+deb9u1
+libssl1.0.2:amd64	1.0.2l-2+deb9u3
+libssl1.1:amd64	1.1.0f-3+deb9u2
 libstdc++6:amd64	6.3.0-18+deb9u1
 libsub-name-perl	0.21-1
 libswitch-perl	2.17-2
 libsysfs2:amd64	2.1.0+repack-4+b2
-libsystemd0:amd64	232-25+deb9u2
+libsystemd0:amd64	232-25+deb9u3
 libtalloc2:amd64	2.1.8-1
 libtasn1-6:amd64	4.10-1.1+deb9u1
 libtdb1:amd64	1.3.11-2
@@ -487,7 +487,7 @@ libtsan0:amd64	6.3.0-18+deb9u1
 libtspi1	0.3.14+fixed1-1
 libtxc-dxtn-s2tc:amd64	1.0+git20151227-2
 libubsan0:amd64	6.3.0-18+deb9u1
-libudev1:amd64	232-25+deb9u2
+libudev1:amd64	232-25+deb9u3
 libudisks2-0:amd64	2.1.8-1
 libunistring0:amd64	0.9.6+really0.9.3-0.1
 liburi-perl	1.71-1
@@ -603,7 +603,7 @@ nwipe	0.21-1
 openssh-client	1:7.4p1-10+deb9u3
 openssh-server	1:7.4p1-10+deb9u3
 openssh-sftp-server	1:7.4p1-10+deb9u3
-openssl	1.1.0f-3+deb9u1
+openssl	1.1.0f-3+deb9u2
 os-prober	1.76~deb9u1
 p7zip	16.02+dfsg-3+deb9u1
 p7zip-full	16.02+dfsg-3+deb9u1
@@ -661,6 +661,7 @@ python3-six	1.10.0-3
 python3-urllib3	1.19.1-1
 python3.5	3.5.3-1
 python3.5-minimal	3.5.3-1
+quota	4.03-2+deb9u1
 readline-common	7.0-3
 reiser4progs	1.1.0-3
 reiserfsprogs	1:3.6.25-4+b1
@@ -688,8 +689,8 @@ sudo	1.8.19p1-2.1
 sysfsutils	2.1.0+repack-4+b2
 syslinux	3:6.03+dfsg-14.1+deb9u1
 syslinux-common	3:6.03+dfsg-14.1+deb9u1
-systemd	232-25+deb9u2
-systemd-sysv	232-25+deb9u2
+systemd	232-25+deb9u3
+systemd-sysv	232-25+deb9u3
 sysvinit-utils	2.88dsf-59.9
 tar	1.29b-1.1
 tasksel	3.39
@@ -702,10 +703,10 @@ testdisk	7.0-3
 tmux	2.3-4
 traceroute	1:2.1.0-2
 tree	1.7.0-5
-tzdata	2018c-0+deb9u1
+tzdata	2018d-0+deb9u1
 u-boot-tools	2016.11+dfsg1-4
 ucf	3.0036
-udev	232-25+deb9u2
+udev	232-25+deb9u3
 udftools	1.3-2~deb9u1
 udisks2	2.1.8-1
 unzip	6.0-21

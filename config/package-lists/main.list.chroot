@@ -78,6 +78,7 @@ psmisc
 pv
 pwgen
 pxelinux
+quota
 reiser4progs
 reiserfsprogs
 screen
