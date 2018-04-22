@@ -1,5 +1,6 @@
 *.iso
 .build/
+authorized_keys.d/*.pub
 binary/
 build.log
 cache/
@@ -34,8 +35,4 @@ config/hooks/normal/0430-update-mlocate-database.hook.chroot
 config/hooks/normal/0440-update-nvidia-alternative.hook.chroot
 config/package-lists/live.list.chroot
 config/source
-live-image-amd64.contents
-live-image-amd64.files
-live-image-amd64.hybrid.iso
-live-image-amd64.hybrid.iso.zsync
-live-image-amd64.packages
+live-image-amd64.*
