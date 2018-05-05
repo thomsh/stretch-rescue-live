@@ -2,7 +2,7 @@
 
 set -e
 
-_mirror="http://mirror.it.ubc.ca/debian"
+_mirror="http://ftp.debian.org/debian"
 _dist="stretch"
 
 lb config noauto \
