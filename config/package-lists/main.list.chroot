@@ -16,6 +16,7 @@ clonezilla
 console-setup
 cryptsetup
 curlftpfs
+dirmngr
 diskscan
 dnsutils
 ebtables
