@@ -34,17 +34,24 @@ rm -f *.iso
 ## Load the desired ssh pub-keys into the live chroot.
 ##
 
-root_home="config/includes.chroot/root"
-
-mkdir -p	"${root_home}/.ssh/"
-: >		"${root_home}/.ssh/authorized_keys"
-chmod -R go-rwx	"${root_home}"
+tmpfile="$(mktemp)"
 
 find authorized_keys.d -iname '*.pub' -print | sort |
 while read pk ; do
-	cat "${pk}" >> "${root_home}/.ssh/authorized_keys"
-	echo "Added '${pk}'"
+	cat "${pk}" >> "${tmpfile}"
+	echo "Added pubkey '${pk}'"
 done
+
+if [ -s "${tmpfile}" ]; then
+
+	root_home="config/includes.chroot/root"
+
+	mkdir -p "${root_home}/.ssh/"
+	cp "${tmpfile}" "${root_home}/.ssh/authorized_keys"
+	chmod -R u+rwX,go-rwx "${root_home}"
+fi
+
+rm -f "${tmpfile}"
 
 ##
 ## Run the debian live build process.
