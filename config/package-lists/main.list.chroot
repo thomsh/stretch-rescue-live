@@ -79,10 +79,12 @@ psmisc
 pv
 pwgen
 pxelinux
+qemu-utils
 quota
 reiser4progs
 reiserfsprogs
 screen
+sharutils
 smartmontools
 smbclient
 socat
