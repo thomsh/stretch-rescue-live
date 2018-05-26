@@ -426,7 +426,7 @@ libpolkit-backend-1-0:amd64	0.105-18
 libpolkit-gobject-1-0:amd64	0.105-18
 libpopt0:amd64	1.16-10+b2
 libproc-processtable-perl	0.53-2
-libprocps6:amd64	2:3.3.12-3
+libprocps6:amd64	2:3.3.12-3+deb9u1
 libproxy1v5:amd64	0.4.14-2
 libpsl5:amd64	0.17.0-3
 libpython-stdlib:amd64	2.7.13-2
@@ -624,7 +624,7 @@ pm-utils	1.4.1-17
 policykit-1	0.105-18
 powermgmt-base	1.31+nmu1
 ppp	2.4.7-1+4
-procps	2:3.3.12-3
+procps	2:3.3.12-3+deb9u1
 psmisc	22.21-2.1+b2
 pv	1.6.0-1+b1
 pwgen	2.07-1.1+b1
