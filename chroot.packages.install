@@ -153,6 +153,7 @@ grub-efi-amd64-bin	2.02~beta3-5
 grub-efi-ia32-bin	2.02~beta3-5
 grub-pc-bin	2.02~beta3-5
 grub-xen-bin	2.02~beta3-5
+grub2-common	2.02~beta3-5
 gsettings-desktop-schemas	3.22.0-1
 guile-2.0-libs:amd64	2.0.13+1-4
 gzip	1.6-5+b1
@@ -662,7 +663,7 @@ python3-six	1.10.0-3
 python3-urllib3	1.19.1-1
 python3.5	3.5.3-1
 python3.5-minimal	3.5.3-1
-qemu-utils	1:2.8+dfsg-6+deb9u3
+qemu-utils	1:2.8+dfsg-6+deb9u4
 quota	4.03-2+deb9u1
 readline-common	7.0-3
 reiser4progs	1.1.0-3

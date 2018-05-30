@@ -35,6 +35,7 @@ grub-efi-amd64-bin
 grub-efi-ia32-bin
 grub-pc-bin
 grub-xen-bin
+grub2-common
 haveged
 hfsplus
 hfsprogs
