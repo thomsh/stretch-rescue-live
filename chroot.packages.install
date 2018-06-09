@@ -63,7 +63,7 @@ debianutils	4.8.1.1
 device-tree-compiler	1.4.2-1
 dh-python	2.20170125
 diffutils	1:3.5-3
-dirmngr	2.1.18-8~deb9u1
+dirmngr	2.1.18-8~deb9u2
 diskscan	0.19-4
 distro-info-data	0.36
 dkms	2.3-2
@@ -141,10 +141,10 @@ gettext-base	0.19.8.1-2
 glib-networking:amd64	2.50.0-1+b1
 glib-networking-common	2.50.0-1
 glib-networking-services	2.50.0-1+b1
-gnupg	2.1.18-8~deb9u1
-gnupg-agent	2.1.18-8~deb9u1
+gnupg	2.1.18-8~deb9u2
+gnupg-agent	2.1.18-8~deb9u2
 gpart	1:0.3-3
-gpgv	2.1.18-8~deb9u1
+gpgv	2.1.18-8~deb9u2
 gpm	1.20.4-6.2+b1
 grep	2.27-2
 groff-base	1.22.3-9
