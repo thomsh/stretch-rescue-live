@@ -70,9 +70,13 @@ set +x
 ##
 
 org_iso="live-image-amd64.hybrid.iso"
-my_iso="${fn}-$(date +%Y%m%d.%H%M).iso"
+version="$(date +%Y%m%d.%H%M)"
+my_iso="${fn}-${version}.iso"
+m4_name="${fn//-/_}_LATEST" ; m4_name="${m4_name^^}"
+m4_file="${fn}.m4"
 
 if [ -e "${org_iso}" ]; then
+	echo "define(\`${m4_name}',\`${version}')dnl" > "${m4_file}"
 	mv "$org_iso" "$my_iso"
 	ln -s "$my_iso" "$org_iso"
 	echo
