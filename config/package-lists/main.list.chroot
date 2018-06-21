@@ -29,6 +29,7 @@ fatresize
 freeipmi
 fsarchiver
 gddrescue
+git
 gpart
 gpm
 grub-efi-amd64-bin
@@ -56,9 +57,11 @@ kpartx
 laptop-detect
 lilo
 links
+live-build
 lldpd
 lshw
 lvm2
+m4
 mbr
 mc
 mdadm
