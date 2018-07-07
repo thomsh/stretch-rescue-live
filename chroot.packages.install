@@ -466,7 +466,7 @@ libsmbclient:amd64	2:4.5.12+dfsg-2+deb9u2
 libsnmp-base	5.7.3+dfsg-1.7
 libsnmp30:amd64	5.7.3+dfsg-1.7
 libsort-naturally-perl	1.03-1
-libsoup2.4-1:amd64	2.56.0-2+deb9u1
+libsoup2.4-1:amd64	2.56.0-2+deb9u2
 libsqlite3-0:amd64	3.16.2-5+deb9u1
 libss2:amd64	1.43.4-2
 libssh2-1:amd64	1.7.0-1
