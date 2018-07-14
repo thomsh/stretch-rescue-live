@@ -18,7 +18,7 @@ atmel-firmware	1.3-4
 attr	1:2.4.47-2+b2
 aufs-dkms	4.9+20161219-1
 aufs-tools	1:4.1+20161219-1
-base-files	9.9+deb9u4
+base-files	9.9+deb9u5
 base-passwd	3.5.43
 bash	4.4-5
 bash-completion	1:2.1-4.3
@@ -36,7 +36,7 @@ bsdutils	1:2.29.2-1+deb9u1
 btrfs-progs	4.7.3-1
 busybox	1:1.22.0-19+b3
 bzip2	1.0.6-8.1
-ca-certificates	20161130+nmu1
+ca-certificates	20161130+nmu1+deb9u1
 cifs-utils	2:6.7-1
 clonezilla	3.21.13-1
 console-setup	1.164
@@ -76,7 +76,7 @@ dnsmasq-base	2.76-5+deb9u1
 dnsutils	1:9.10.3.dfsg.P4-12.3+deb9u4
 doc-debian	6.4
 dosfstools	4.1-1
-dpkg	1.18.24
+dpkg	1.18.25
 drbl	2.20.11-1
 e2fslibs:amd64	1.43.4-2
 e2fsprogs	1.43.4-2
@@ -95,7 +95,7 @@ extlinux	3:6.03+dfsg-14.1+deb9u1
 f2fs-tools	1.7.0-1.1
 fakeroot	1.21-3.1
 fatresize	1.0.2-9
-file	1:5.30-1+deb9u1
+file	1:5.30-1+deb9u2
 findutils	4.6.0+git+20161106-2
 firmware-amd-graphics	20161130-3
 firmware-atheros	20161130-3
@@ -179,7 +179,7 @@ init-system-helpers	1.48
 initramfs-tools	0.130
 initramfs-tools-core	0.130
 install-info	6.3.0.dfsg.1-1+b2
-intel-microcode	3.20170707.1~deb9u1
+intel-microcode	3.20180425.1~deb9u1
 inxi	2.3.5-1
 ipcalc	0.41-5
 iperf	2.0.9+dfsg1-1
@@ -251,7 +251,7 @@ libclass-accessor-perl	0.34-1
 libclass-isa-perl	0.36-5
 libcomerr2:amd64	1.43.4-2
 libcryptsetup4:amd64	2:1.7.3-4
-libcups2:amd64	2.2.1-8+deb9u1
+libcups2:amd64	2.2.1-8+deb9u2
 libcurl3-gnutls:amd64	7.52.1-5+deb9u6
 libcwidget3v5:amd64	0.5.17-4+b1
 libdb5.3:amd64	5.3.28-12+deb9u1
@@ -355,8 +355,8 @@ libkrb5-3:amd64	1.15-1+deb9u1
 libkrb5support0:amd64	1.15-1+deb9u1
 libksba8:amd64	1.3.5-2
 libkyotocabinet16v5:amd64	1.2.76-4.2+b1
-libldap-2.4-2:amd64	2.4.44+dfsg-5+deb9u1
-libldap-common	2.4.44+dfsg-5+deb9u1
+libldap-2.4-2:amd64	2.4.44+dfsg-5+deb9u2
+libldap-common	2.4.44+dfsg-5+deb9u2
 libldb1:amd64	2:1.1.27-1+b1
 liblinear3:amd64	2.1.0+dfsg-2
 libllvm3.9:amd64	1:3.9.1-9
@@ -374,8 +374,8 @@ liblwres141:amd64	1:9.10.3.dfsg.P4-12.3+deb9u4
 liblz4-1:amd64	0.0~r131-2+b1
 liblzma5:amd64	5.2.2-1.2+b1
 liblzo2-2:amd64	2.08-1.2+b2
-libmagic-mgc	1:5.30-1+deb9u1
-libmagic1:amd64	1:5.30-1+deb9u1
+libmagic-mgc	1:5.30-1+deb9u2
+libmagic1:amd64	1:5.30-1+deb9u2
 libmailutils5:amd64	1:3.1.1-1
 libmariadbclient18:amd64	10.1.26-0+deb9u1
 libmbim-glib4:amd64	1.14.0-1+b1
@@ -413,7 +413,7 @@ libpam-cap:amd64	1:2.25-1
 libpam-modules:amd64	1.1.8-3.6
 libpam-modules-bin	1.1.8-3.6
 libpam-runtime	1.1.8-3.6
-libpam-systemd:amd64	232-25+deb9u3
+libpam-systemd:amd64	232-25+deb9u4
 libpam0g:amd64	1.1.8-3.6
 libparse-debianchangelog-perl	1.2.0-12
 libparted-fs-resize0:amd64	3.2-17
@@ -476,7 +476,7 @@ libstdc++6:amd64	6.3.0-18+deb9u1
 libsub-name-perl	0.21-1
 libswitch-perl	2.17-2
 libsysfs2:amd64	2.1.0+repack-4+b2
-libsystemd0:amd64	232-25+deb9u3
+libsystemd0:amd64	232-25+deb9u4
 libtalloc2:amd64	2.1.8-1
 libtasn1-6:amd64	4.10-1.1+deb9u1
 libtdb1:amd64	1.3.11-2
@@ -493,7 +493,7 @@ libtsan0:amd64	6.3.0-18+deb9u1
 libtspi1	0.3.14+fixed1-1
 libtxc-dxtn-s2tc:amd64	1.0+git20151227-2
 libubsan0:amd64	6.3.0-18+deb9u1
-libudev1:amd64	232-25+deb9u3
+libudev1:amd64	232-25+deb9u4
 libudisks2-0:amd64	2.1.8-1
 libunistring0:amd64	0.9.6+really0.9.3-0.1
 liburi-perl	1.71-1
@@ -508,7 +508,7 @@ libx11-data	2:1.6.4-3
 libx11-xcb1:amd64	2:1.6.4-3
 libx86-1:amd64	1.1+ds1-10.2
 libx86emu1:amd64	1.11-2
-libxapian30:amd64	1.4.3-2
+libxapian30:amd64	1.4.3-2+deb9u1
 libxau6:amd64	1:1.0.8-1
 libxaw7:amd64	2:1.0.13-1+b2
 libxcb-dri2-0:amd64	1.12-1
@@ -544,14 +544,14 @@ libxxf86vm1:amd64	1:1.1.4-1+b2
 lilo	1:24.2-2+b1
 links	2.14-2+b1
 linux-base	4.5
-linux-compiler-gcc-6-x86	4.9.88-1+deb9u1
-linux-headers-4.9.0-6-amd64	4.9.88-1+deb9u1
-linux-headers-4.9.0-6-common	4.9.88-1+deb9u1
-linux-headers-amd64	4.9+80+deb9u4
-linux-image-4.9.0-6-amd64	4.9.88-1+deb9u1
-linux-image-amd64	4.9+80+deb9u4
-linux-kbuild-4.9	4.9.88-1+deb9u1
-linux-libc-dev:amd64	4.9.88-1+deb9u1
+linux-compiler-gcc-6-x86	4.9.110-1
+linux-headers-4.9.0-7-amd64	4.9.110-1
+linux-headers-4.9.0-7-common	4.9.110-1
+linux-headers-amd64	4.9+80+deb9u5
+linux-image-4.9.0-7-amd64	4.9.110-1
+linux-image-amd64	4.9+80+deb9u5
+linux-kbuild-4.9	4.9.110-1
+linux-libc-dev:amd64	4.9.110-1
 live-boot	1:20170112
 live-boot-doc	1:20170112
 live-boot-initramfs-tools	1:20170112
@@ -621,7 +621,7 @@ partclone	0.2.89-4
 parted	3.2-17
 partimage	0.6.9-4
 passwd	1:4.4-4.1
-patch	2.7.5-1+b2
+patch	2.7.5-1+deb9u1
 pciutils	1:3.5.2-1
 perl	5.24.1-3+deb9u4
 perl-base	5.24.1-3+deb9u4
@@ -664,7 +664,7 @@ python3-minimal	3.5.3-1
 python3-pkg-resources	33.1.1-1
 python3-pycurl	7.43.0-2
 python3-pysimplesoap	1.16-2
-python3-reportbug	7.1.7+deb9u1
+python3-reportbug	7.1.7+deb9u2
 python3-requests	2.12.4-1
 python3-six	1.10.0-3
 python3-urllib3	1.19.1-1
@@ -676,7 +676,7 @@ readline-common	7.0-3
 reiser4progs	1.1.0-3
 reiserfsprogs	1:3.6.25-4+b1
 rename	0.20-4
-reportbug	7.1.7+deb9u1
+reportbug	7.1.7+deb9u2
 rfkill	0.5-1+b1
 rpcbind	0.2.3-0.6
 rsync	3.1.2-1+deb9u1
@@ -688,7 +688,7 @@ screen	4.5.0-6
 sed	4.4-1
 sensible-utils	0.0.9+deb9u1
 sgml-base	1.29
-shared-mime-info	1.8-1
+shared-mime-info	1.8-1+deb9u1
 sharutils	1:4.15.2-2+deb9u1
 smartmontools	6.5+svn4324-1
 smbclient	2:4.5.12+dfsg-2+deb9u2
@@ -700,8 +700,8 @@ sudo	1.8.19p1-2.1
 sysfsutils	2.1.0+repack-4+b2
 syslinux	3:6.03+dfsg-14.1+deb9u1
 syslinux-common	3:6.03+dfsg-14.1+deb9u1
-systemd	232-25+deb9u3
-systemd-sysv	232-25+deb9u3
+systemd	232-25+deb9u4
+systemd-sysv	232-25+deb9u4
 sysvinit-utils	2.88dsf-59.9
 tar	1.29b-1.1
 tasksel	3.39
@@ -717,7 +717,7 @@ tree	1.7.0-5
 tzdata	2018e-0+deb9u1
 u-boot-tools	2016.11+dfsg1-4
 ucf	3.0036
-udev	232-25+deb9u3
+udev	232-25+deb9u4
 udftools	1.3-2~deb9u1
 udisks2	2.1.8-1
 unzip	6.0-21
