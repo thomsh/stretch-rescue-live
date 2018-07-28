@@ -130,7 +130,7 @@ freeipmi-common	1.4.11-1.1+b1
 freeipmi-ipmidetect	1.4.11-1.1+b1
 freeipmi-tools	1.4.11-1.1+b1
 fsarchiver	0.8.1-1
-fuse	2.9.7-1
+fuse	2.9.7-1+deb9u1
 gawk	1:4.1.4+dfsg-1
 gcc	4:6.3.0-4
 gcc-6	6.3.0-18+deb9u1
@@ -288,7 +288,7 @@ libfontenc1:amd64	1:1.1.3-1+b2
 libfreeipmi16	1.4.11-1.1+b1
 libfreetype6:amd64	2.6.3-3.2
 libfribidi0:amd64	0.19.7-1+b1
-libfuse2:amd64	2.9.7-1
+libfuse2:amd64	2.9.7-1+deb9u1
 libgc1c2:amd64	1:7.4.2-8
 libgcc-6-dev:amd64	6.3.0-18+deb9u1
 libgcc1:amd64	1:6.3.0-18+deb9u1
