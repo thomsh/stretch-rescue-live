@@ -15,6 +15,7 @@ cifs-utils
 clonezilla
 console-setup
 cryptsetup
+curl
 curlftpfs
 dirmngr
 diskscan
