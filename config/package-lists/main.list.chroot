@@ -75,6 +75,7 @@ network-manager
 nfs-common
 nftables
 nmap
+nmon
 nwipe
 openssh-server
 p7zip-full
