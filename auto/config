@@ -22,7 +22,7 @@ lb config noauto \
 	--security true \
 	--source false \
 	--firmware-chroot true \
-	--bootappend-live 'boot=live components'" hostname=${_dist}-live "'toram=filesystem.squashfs \"\$\{loopback\}\" \"\$\{kernelopts\}\"' \
-	--bootappend-live-failsafe 'boot=live components'" hostname=${_dist}-live "'memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal \"\$\{loopback\}\" \"\$\{kernelopts\}\"' \
+	--bootappend-live 'boot=live components'" hostname=${_dist}-live "'toram=filesystem.squashfs console=ttyS0,115200n8 console=tty0 \"\$\{loopback\}\" \"\$\{kernelopts\}\"' \
+	--bootappend-live-failsafe 'boot=live components'" hostname=${_dist}-live "'memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal console=ttyS0,115200n8 console=tty0 \"\$\{loopback\}\" \"\$\{kernelopts\}\"' \
 	"${@}"
 
