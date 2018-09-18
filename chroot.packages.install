@@ -180,7 +180,7 @@ init-system-helpers	1.48
 initramfs-tools	0.130
 initramfs-tools-core	0.130
 install-info	6.3.0.dfsg.1-1+b2
-intel-microcode	3.20180703.2~deb9u1
+intel-microcode	3.20180807a.1~deb9u1
 inxi	2.3.5-1
 ipcalc	0.41-5
 iperf	2.0.9+dfsg1-1
