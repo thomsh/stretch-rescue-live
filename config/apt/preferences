@@ -1,0 +1,8 @@
+Package: python3-reportbug
+Pin: version *
+Pin-Priority: -1
+
+Package: reportbug
+Pin: version *
+Pin-Priority: -1
+
