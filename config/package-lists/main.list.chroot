@@ -10,6 +10,7 @@ bluetooth
 bonnie++
 bridge-utils
 broadcom-sta-dkms
+bsd-mailx
 btrfs-progs
 cifs-utils
 clonezilla
@@ -109,6 +110,7 @@ udftools
 udisks2
 vlan
 vmfs-tools
+whois
 xfsdump
 xfsprogs
 xorriso
