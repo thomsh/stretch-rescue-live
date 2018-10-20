@@ -6,24 +6,8 @@ set -eu
 
 services=(
 	atm
-	avahi-daemon
-	clamav-freshclam
 	cron
-	curvedns
-	inetd
-	lldpd
-	ModemManager
-	mpt-statusd
-	NetworkManager
-	NetworkManager-wait-online
-	rpcbind
-	rsyslog
-	smartd
 	ssh
-	wpa_supplicant
-	zfs-mount
-	zfs-share
-	zfs-zed
 )
 
 for s in "${services[@]}"; do

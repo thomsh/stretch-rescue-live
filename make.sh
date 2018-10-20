@@ -1,6 +1,6 @@
 #!/bin/bash
 set -eu
-
+export http_proxy="http://localhost:3142/"
 fn="stretch-rescue-live"
 
 ##
