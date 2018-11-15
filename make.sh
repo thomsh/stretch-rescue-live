@@ -28,7 +28,7 @@ fi
 ## Clean up ISOs from previous build run.
 ##
 
-rm -f *.iso
+rm -f -- *.iso
 
 ##
 ## Load the desired ssh pub-keys into the live chroot.
