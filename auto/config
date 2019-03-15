@@ -21,6 +21,5 @@ lb config noauto \
 	--apt-source-archives false \
 	--security true \
 	--source false \
-	--bootappend-live "toram" \
 	"${@}"
 

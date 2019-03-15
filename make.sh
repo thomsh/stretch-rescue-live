@@ -96,7 +96,7 @@ generate_grub_menuentry() {
 	cat <<EOF
 	iso_path="/boot/isos/${f}-${v}.iso"
 	export iso_path
-	kernelopts=" live-media=removable-usb "
+	kernelopts=" live-media=removable-usb toram"
 	export kernelopts
 	loopback loop "\$iso_path"
 	set root=(loop)
