@@ -1,39 +1,21 @@
-__Build Instructions__
+# Stretch-rescue-live custom
 
-Use Debian 9.0 ("stretch"), or newer as the build host.
+## ISO usage
 
-Ensure you have `sudo` capability to run programs as root.
+### Disk less OS :
+At the grub os selection screen pres `TAB` then append to the cmdline `toram` then press `ENTER`  
+![GRUB_SCREEN](https://github.com/thomsh/stretch-rescue-live/blob/master/docs/screen_grub.png "Grub screen")
 
-Install the following packages:
-  - `live-build`
-  - `apt-cacher-ng`
+On boot completed and desktop (XFCE4) opened : you can remove the usb drive/iso
 
-Create `/etc/live/build.conf` with the following content:
+### Change keyboard
+`setxkbmap us` or else
 
-```
-LB_APT_HTTP_PROXY="http://localhost:3142/"
-```
+## Build instruction on Debian Stretch
 
-If you have at least 8 GB of RAM available, mount a `tmpfs`
-of size 8 GB or larger on which to run the build. E.g.:
+Install the following packages :
+ - `live-build`
+ - `apt-cacher-ng`
 
-```
-mkdir -p "$HOME/mybuild"
-sudo mount -t tmpfs -o size=8G tmpfs "$HOME/mybuild"
-```
-
-Clone the project into the build directory. E.g.:
-
-```
-mkdir -p "$HOME/mybuild"
-cd "$HOME/mybuild"
-git clone https://salsa.debian.org/smonaica-guest/${project}.git
-```
-
-Run the build script as root.
-
-```
-cd "$HOME/mybuild/$project"
-sudo http_proxy="http://localhost:3142/" ./make.sh
-```
-
+Start the build :
+`sudo ./make.sh`
