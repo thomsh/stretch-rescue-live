@@ -1,5 +1,5 @@
 #!/bin/bash
-set -eu
+set -euo pipefail
 export http_proxy="http://localhost:3142/"
 fn="stretch-rescue-live"
 
@@ -16,12 +16,19 @@ cd "${wd}"
 ## Check that I'm running as root
 ##
 
-if [ $(id -u) -ne 0 ]; then
+if [ "$(id -u)" -ne 0 ]; then
 
 	echo
 	echo "${wb} must be run as root (or with sudo)."
 	echo
 	exit 1
+fi
+
+##
+## Start apt-cacher-ng
+##
+if [ -f "/usr/sbin/apt-cacher-ng" ];then
+  systemctl start apt-cacherqskfdjskfdj-ng.service
 fi
 
 ##
@@ -37,15 +44,13 @@ rm -f -- *.iso
 tmpfile="$(mktemp)"
 
 find authorized_keys.d -iname '*.pub' -print | sort |
-while read pk ; do
+while read -r pk ; do
 	cat "${pk}" >> "${tmpfile}"
 	echo "Added pubkey '${pk}'"
 done
 
 if [ -s "${tmpfile}" ]; then
-
 	root_home="config/includes.chroot/root"
-
 	mkdir -p "${root_home}/.ssh/"
 	cp "${tmpfile}" "${root_home}/.ssh/authorized_keys"
 	chmod -R u+rwX,go-rwx "${root_home}"
@@ -138,4 +143,7 @@ else
 	exit 1
 fi
 
+if [ -f "/usr/sbin/apt-cacher-ng" ];then
+  systemctl stop apt-cacherqskfdjskfdj-ng.service
+fi
 exit 0
