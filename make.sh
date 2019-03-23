@@ -28,7 +28,7 @@ fi
 ## Start apt-cacher-ng
 ##
 if [ -f "/usr/sbin/apt-cacher-ng" ];then
-  systemctl start apt-cacherqskfdjskfdj-ng.service
+  systemctl start apt-cacher-ng.service
 fi
 
 ##
@@ -144,6 +144,6 @@ else
 fi
 
 if [ -f "/usr/sbin/apt-cacher-ng" ];then
-  systemctl stop apt-cacherqskfdjskfdj-ng.service
+  systemctl stop apt-cacher-ng.service
 fi
 exit 0

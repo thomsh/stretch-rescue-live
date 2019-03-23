@@ -1,0 +1,14 @@
+#!/bin/bash
+set -x
+# Requirement : run on Debian Stretch with backports repository enabled
+if ! egrep '^deb .+ stretch-backports' -- /etc/apt/sources.list /etc/apt/sources.list.d/*.list ; then
+  echo 'deb http://deb.debian.org/debian/ stretch-backports main contrib non-free' |tee /etc/apt/sources.list.d/bpo.list
+fi
+if ! egrep '^deb-src .+ stretch-backports' -- /etc/apt/sources.list /etc/apt/sources.list.d/*.list ; then
+  echo 'deb-src http://deb.debian.org/debian/ stretch-backports main contrib non-free' |tee /etc/apt/sources.list.d/bposrc.list
+fi
+set -euxo pipefail
+apt-get update
+apt-get install -t stretch-backports -q -y \
+  dirmngr gnupg gnupg-agent gnupg-l10n gnupg-utils gnupg2 gpg gpg-agent gpg-wks-client gpg-wks-server gpgconf gpgsm gpgv scdaemon
+exit $?
