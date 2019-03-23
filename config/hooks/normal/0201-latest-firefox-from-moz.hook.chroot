@@ -1,0 +1,107 @@
+#!/bin/bash
+# GPG key for Firefox Release, fingerprint :
+# Primary key fingerprint: 14F2 6682 D091 6CDD 81E3  7B6D 61B7 B526 D98F 0353
+#     Subkey fingerprint: DCEA C5D9 6135 B91C 4EA6  72AB BBBE BDBB 24C6 F355
+# gpg --receive-keys 0x14F26682D0916CDD81E37B6D61B7B526D98F0353
+
+# GPG SETTINGS
+RELEASE_KEY_FINGERPRINT="0x14F26682D0916CDD81E37B6D61B7B526D98F0353"
+MOZILLA_KEY_SERVER="gpg.mozilla.org"
+GNUPGHOME="/var/cache/gnupg_download_firefox_release"
+
+# FIREFOX VERSION SELECTION
+MOZILLA_LATEST_URL="https://product-details.mozilla.org/1.0/firefox_versions.json"
+FIREFOX_TARGET_BRANCH="LATEST_FIREFOX_VERSION"
+
+# INSTALL SETTINGS
+MOZILLA_BASE_URL_DOWNLOAD="https://ftp.mozilla.org/pub/firefox/releases"
+DL_PATH="/var/cache/download_firefox_release"
+INSTALL_PATH="/opt/firefox_release"
+DL_USER="nobody"
+
+
+for TOOL in gpg sudo jq curl wget
+do
+  if [ ! -x "$(command -v "${TOOL}")" ];then
+    apt-get install -qy jq curl wget
+  fi
+done
+
+
+set -euxo pipefail
+
+
+export GNUPGHOME
+mkdir -p "${GNUPGHOME}"
+chmod 700 "${GNUPGHOME}"
+if ! gpg --with-fingerprint -k "${RELEASE_KEY_FINGERPRINT}";then
+	gpg --keyserver "${MOZILLA_KEY_SERVER}" --receive-keys "${RELEASE_KEY_FINGERPRINT}"
+	# display downloaded key
+	gpg --with-fingerprint -k "${RELEASE_KEY_FINGERPRINT}"
+fi
+
+mkdir -p "${DL_PATH}"
+chmod 1777 "${DL_PATH}"
+cd "${DL_PATH}"
+
+VERSION=$(sudo -u "${DL_USER}" -- curl --fail -s "${MOZILLA_LATEST_URL}" |sudo -u "${DL_USER}" -- jq ".${FIREFOX_TARGET_BRANCH}" -r|head -n 1)
+if ! echo "${VERSION}" |grep -P '^[0-9A-Za-z.]{3,16}$' > /dev/null;then
+  echo "Invalid version returned by Mozilla API : [${VERSION}]"
+  exit 1
+fi
+
+if grep "${VERSION}" "${DL_PATH}/installed_version" ;then
+  set +x
+  echo ""
+  echo "Firefox version ${VERSION} already installed"
+  echo "purge ${DL_PATH}/installed_version  for reinstall"
+  exit 0
+fi
+
+FFARCHIVE="firefox-${VERSION}.tar.bz2"
+
+FFARCHIVE_STATUS=0
+function verify_ffarchive() {
+  if [ -f "${FFARCHIVE}" ];then
+    CHECKSUM=$(sha512sum "${FFARCHIVE}"|awk '{print $1}')
+    if grep "${CHECKSUM}" "SHA512SUMS" >/dev/null ;then
+      FFARCHIVE_STATUS=1
+    fi
+  fi
+}
+
+FFARCHIVE_STATUS=0
+verify_ffarchive
+if [ ${FFARCHIVE_STATUS} -ne 1 ];then
+	sudo -u "${DL_USER}" -- wget --no-hsts "${MOZILLA_BASE_URL_DOWNLOAD}/${VERSION}/SHA512SUMS" -O "SHA512SUMS"
+	sudo -u "${DL_USER}" -- wget --no-hsts "${MOZILLA_BASE_URL_DOWNLOAD}/${VERSION}/SHA512SUMS.asc" -O "SHA512SUMS.asc"
+	gpg  --verify SHA512SUMS.asc SHA512SUMS
+	sudo -u "${DL_USER}" -- wget --no-hsts "${MOZILLA_BASE_URL_DOWNLOAD}/${VERSION}/linux-x86_64/en-US/${FFARCHIVE}" -O "${FFARCHIVE}"
+fi
+
+FFARCHIVE_STATUS=0
+verify_ffarchive
+if [ ${FFARCHIVE_STATUS} -ne 1 ];then
+	echo "Invalid checksum  / archive : ${CHECKSUM}"
+	rm -f -- "${FFARCHIVE}*"
+	exit 1
+fi
+
+mkdir -p "${INSTALL_PATH}"
+rm -rf -- "${INSTALL_PATH:?}/*" ||true
+tar -C "${INSTALL_PATH}/" -jxvf "${FFARCHIVE}"
+
+# remove internal extension (untrusted)
+find "${INSTALL_PATH}/firefox/browser/features/" -type f -iname '*.xpi' -print -delete
+
+echo "${VERSION}" > "${DL_PATH}/installed_version"
+
+rm -f -- firefox-*.tar.bz2*
+
+set +x
+echo "Firefox ${VERSION} sucessfully installed in ${INSTALL_PATH}"
+# Dirty replace default firefox
+rm -f  /usr/bin/firefox /usr/bin/firefox-esr
+ln -s /opt/firefox_release/firefox/firefox /usr/bin/firefox
+ln -s /opt/firefox_release/firefox/firefox /usr/bin/firefox-esr
+exit 0
