@@ -29,7 +29,6 @@ openssl
 pbzip2
 pcscd
 pigz
-postfix
 pv
 pwgen
 rsync

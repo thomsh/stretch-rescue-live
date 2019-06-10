@@ -1,12 +1,12 @@
-*.iso
-.build/
 authorized_keys.d/*.pub
 binary/
+.build/
 build.log
 cache/
-chroot.files
-chroot.packages.live
 chroot/
+chroot.files
+chroot.packages.install
+chroot.packages.live
 config/binary
 config/bootstrap
 config/build
@@ -35,4 +35,5 @@ config/hooks/normal/0430-update-mlocate-database.hook.chroot
 config/hooks/normal/0440-update-nvidia-alternative.hook.chroot
 config/package-lists/live.list.chroot
 config/source
+*.iso
 live-image-amd64.*
